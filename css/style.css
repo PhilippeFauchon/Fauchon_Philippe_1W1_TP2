@@ -1,0 +1,202 @@
+/* Général - box-sizing */
+*{
+    box-sizing: border-box;
+}
+
+/* Général - html */
+html{
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Général - body */
+body{
+    margin:0;
+    padding:0;
+}
+
+/* Titres h1,h2,h3 */
+h1,h2,h3 {
+    margin:0;
+}
+
+/* Sections, header et footer */
+section,header,footer{
+    min-height:100vh;
+    min-width: 500px;
+}
+
+/* Classe centre */
+.centre {
+    max-width: 1100px;
+    margin : 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+/***********************Acceuil****************************/
+/* Accueil - fond */
+.acceuil{
+    background-image: url("../images/ecureuil__acceuil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Accueil - textes */
+.textes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Accueil - titre principal */
+.titre__principal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Accueil - logo */
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+/* Accueil - titre H1 */
+.titre__principal h1{
+    display: flex;
+    align-items: end;
+    font-size: 3rem
+}
+
+/* Accueil - auteur */
+.auteur{
+    font-size: 1.2rem;
+}
+
+/* Accueil - description */
+.description{
+    width: 300px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.150);
+    border-radius: 8px;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+}
+
+/* Accueil - bouton inscription */
+.bouton__inscription{
+    display: flex;
+    justify-content: center;
+}
+
+/* Accueil - lien bouton inscription */
+.bouton__inscription a{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+/* Accueil - hover bouton inscription */
+.bouton__inscription a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+/***********************Pied****************************/
+/* Pied - contenu principal */
+.contenu__pied{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin-top: 20px;
+    min-height: 790px;
+}
+
+/* Pied - listes */
+.contenu__pied ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -38px;
+    gap: 5px;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+/* Pied - liens externes */
+.liens__externes{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Pied - style liens externes */
+.liens__externes a{
+    color: black;
+    text-decoration: underline;
+}
+
+/* Pied - hover liens externes */
+.liens__externes a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Pied - titres liens externes */
+.liens__externes h2{
+    margin-bottom: 10px;
+}
+
+/* Pied - bas du pied */
+.bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap-reverse;
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/* Pied - icônes */
+.icones{
+    display: flex;
+    gap: 20px;
+}
+
+/* Couleurs des conteneurs */
+.conteneur:nth-of-type(2){
+    background-color: blue;
+}
+
+.conteneur:nth-of-type(3){
+    background-color: red;
+}
+
+.conteneur:nth-of-type(4){
+    background-color: green;
+}
+
+.conteneur:nth-of-type(5){
+    background-color: yellow;
+}
+
+.conteneur:nth-of-type(6){
+    background-color: dodgerblue;
+}
+
+.conteneur:nth-of-type(7){
+    background-color: chocolate;
+}

@@ -1,0 +1,43 @@
+/* Conteneur principal du formulaire */
+.formulaire{
+    padding: 20px;
+    height: 96vh;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+/* Style général des div à l’intérieur du formulaire */
+.formulaire div{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Conteneur des boutons radio */
+.formulaire__rad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Curseur pour les inputs radio */
+.formulaire__rad input{
+    cursor: pointer;
+}
+
+/* Bouton de soumission */
+.formulaire__submit{
+    cursor: pointer;
+}
+
+/* Effet hover sur le bouton de soumission */
+.formulaire__submit:hover{
+    color: white;
+    background-color: black;
+}

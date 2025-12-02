@@ -1,0 +1,53 @@
+/* Cacher le menu et la checkbox par défaut */
+.liens, #chk-burger{
+    /* Permet de rendre un element invisible */
+    display: none; 
+}
+
+/* Style de l’icône du menu burger */
+.menu__burger{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Conteneur des liens du menu */
+.liens{
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.300);
+    width: 250px;
+    border-radius: 8px;
+
+    transform: translateX(110%);
+    transition: transform 1s;
+}
+
+/* Style des liens à l’intérieur du menu */
+.liens a{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Effet hover sur les liens du menu */
+.liens a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* Transformation du menu quand la checkbox est cochée */
+#chk-burger:checked ~ .liens{
+    transform: translateX(0);
+}

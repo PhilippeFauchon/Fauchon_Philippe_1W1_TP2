@@ -1,0 +1,28 @@
+/* Style général des tables */
+table{
+    margin: 20px;
+    height: 90vh;
+    font-family: "Cinzel", serif;
+    color: white;
+}
+
+/* Style du tableau avec classe "tableau" */
+.tableau{
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+}
+
+/* Style des en-têtes du tableau */
+.tableau th{
+    border: 1px solid #aaa;
+    padding: 15px 5px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+/* Style des cellules du tableau */
+.tableau td{
+    border: 1px solid #aaa;
+    padding: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.300);
+}
