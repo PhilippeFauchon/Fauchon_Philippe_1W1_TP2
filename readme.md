@@ -6,5 +6,5 @@ La queue en panache de l'écureuil et son acharnement à faire des provisions po
 - Auteur: Philippe Fauchon
 - Cours: 1W1-Mise en page Web
 - Département: TIM
-- Collège de Maisonneuve
--GitHub page:
+- Établissement: Collège de Maisonneuve
+- GitHub page: https://philippefauchon.github.io/Fauchon_Philippe_1W1_TP2/
