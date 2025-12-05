@@ -111,6 +111,38 @@ section,header,footer{
     text-decoration: underline;
 }
 
+/***********************Articles************************/
+/*propriete des articles*/
+.tout__articles{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.section__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 350px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.150);
+    border-radius: 10px;
+}
+
+.section__article img{
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-height: 280px;          
+  object-fit: contain;
+  width: 100%;
+}      
+
 /***********************Pied****************************/
 /* Pied - contenu principal */
 .contenu__pied{
