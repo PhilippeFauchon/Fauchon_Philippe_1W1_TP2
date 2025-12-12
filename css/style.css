@@ -21,7 +21,7 @@ h1,h2,h3 {
 }
 
 /* Sections, header et footer */
-section,header,footer{
+section,header{
     min-height:100vh;
 }
 
@@ -53,26 +53,19 @@ section,header,footer{
 /* Accueil - titre principal */
 .titre__principal{
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-}
-
-/* Accueil - logo */
-.logo{
-    width: 60px;
-    height: 60px;
 }
 
 /* Accueil - titre H1 */
 .titre__principal h1{
     display: flex;
     align-items: end;
-    font-size: 3rem
+    font-size: clamp(0.1rem, 5vw, 3rem)
 }
 
 /* Accueil - auteur */
 .auteur{
-    font-size: 1.2rem;
+    font-size: clamp(0.1rem, 3vw, 1.2rem);
 }
 
 /* Acceuil - icônes */
@@ -88,7 +81,7 @@ section,header,footer{
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.150);
     border-radius: 8px;
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: 1.6rem;
     height: auto;
 }
 
@@ -107,9 +100,8 @@ section,header,footer{
     color: white;
     background-color: black;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 100px;
     text-align: center;
-    width: 350px;
 }
 
 /* Accueil - hover bouton inscription */
@@ -130,7 +122,6 @@ section,header,footer{
     flex-shrink: 1;
     flex-grow: 0;
     margin-top: 20px;
-    min-height: 790px;
 }
 
 /* Pied - listes */
@@ -176,21 +167,27 @@ section,header,footer{
     flex-basis: 500px;
     flex-grow: 0;
     flex-shrink: 1;
+    margin-top: 30px;
 }
 
 /* Pied - icônes */
 .icones__bas{
     display: flex;
     gap: 20px;
+    margin: 0;
+}
+
+.avis{
+    margin-top: 10px;
 }
 
 /* Couleurs des conteneurs */
 .conteneur:nth-of-type(2){
-    background-color: blue;
+    background-color: dodgerblue;
 }
 
 .conteneur:nth-of-type(3){
-    background-color: red;
+    background-color: blue;
 }
 
 .conteneur:nth-of-type(4){
@@ -198,11 +195,11 @@ section,header,footer{
 }
 
 .conteneur:nth-of-type(5){
-    background-color: yellow;
+    background-color: red;
 }
 
 .conteneur:nth-of-type(6){
-    background-color: dodgerblue;
+    background-color: deeppink;
 }
 
 .conteneur:nth-of-type(7){

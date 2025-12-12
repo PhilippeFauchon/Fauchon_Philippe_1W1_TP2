@@ -1,0 +1,56 @@
+/*Conteneur flex de la galerie*/
+.galerie{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*Titre de la galerie*/
+.galerie__titre{
+    margin-bottom: 40px;
+}
+
+/*Figure de la galerie*/
+.galerie__figure{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    transform: scale(0.8) rotate(10deg);
+    transition: transform 1s;
+    margin-bottom: 50px;
+}
+
+/*Une figure sur deux*/
+.galerie__figure:nth-last-of-type(odd){
+    transform: scale(0.9) rotate(-10deg);
+}
+
+/*hover de la figure*/
+.galerie__figure:hover{
+    transform: scale(1.2);
+}
+
+/*Image de la figure*/
+.galerie__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: hue-rotate(200deg)
+    saturate(1.99);
+    transition: filter 1s;
+}
+
+/*hover de l'image de la figure*/
+.galerie__img:hover{
+    filter: none;
+}
+
+/*figcaption de la figure*/
+.galerie__figcaption{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}

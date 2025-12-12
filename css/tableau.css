@@ -1,9 +1,14 @@
 /* Style général des tables */
+.alimentation__h2{
+    color: white;
+}
+
 table{
     margin: 20px;
     height: 90vh;
     font-family: "Cinzel", serif;
     color: white;
+    font-size: clamp(0.1rem, 2vw, 1.5rem);
 }
 
 /* Style du tableau avec classe "tableau" */
@@ -25,4 +30,8 @@ table{
     border: 1px solid #aaa;
     padding: 10px 5px;
     background-color: rgba(255, 255, 255, 0.300);
+}
+
+.tableau tr:hover{
+    background-color: red;
 }

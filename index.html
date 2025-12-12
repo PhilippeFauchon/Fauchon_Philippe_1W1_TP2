@@ -1,410 +1,555 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/menu__burger.css">
-        <link rel="stylesheet" href="css/formulaire.css">
-        <link rel="stylesheet" href="css/tableau.css">
-        <link rel="stylesheet" href="css/article.css">
-        <link rel="shortcut icon" href="images/ecureuil__logo.png">
-        <title>L'écureuil d'Amérique du Nord</title>
-    </head>
+<!--Paramètres généraux-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <!--////////////////////Conteneur Acceuil-->
-        <!-- Conteneur principal pour l'accueil -->
-        <div class="conteneur acceuil">
-            <header class="centre" id="acceuil">
-                
-                <!-- Section contenant les textes principaux -->
-                <div class="textes"> 
-                    
-                    <!-- Groupe du logo et du titre principal -->
-                    <div class="titre__principal"> 
-                        
-                        <!-- Logo -->
-                        <img class="logo" src="images/ecureuil__logo.png" alt="logo">
-                        
-                        <!-- Titre principal -->
-                        <h1>L'écureuil d'Amérique du Nord</h1> 
-                    </div>
-                    
-                    <!-- Titre secondaire -->
-                    <div class="titre__secondaire"> 
-                        <h2>Le symbole de Montréal</h2>
-                    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 
-                    <!-- Auteur -->
-                    <div class="auteur">
-                        <h2>Auteur: Philippe Fauchon</h2>
-                    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-                    <!-- Icones -->
-                    <figure class="icones__haut">
-                        <a href="https://github.com/PhilippeFauchon" target="_blank">
-                            <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25" alt="github">
-                        </a>
-                        
-                        <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25" alt="facebook">
-                        <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25" alt="stackoverflow">
-                        <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16" alt="linkedin">
-                        <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25" alt="messenger">
-                        <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25" alt="discord">
-                    </figure>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
-                    <!-- Texte descriptif -->
-                    <div class="description">
-                        <p>
-                            Le terme écureuil est un nom vernaculaire ambigu qui désigne de nombreuses espèces de rongeurs grimpeurs de taille moyenne, parfois même « volants ». Leur queue, plus ou moins touffue selon les espèces, forme un panache ou un plumeau caractéristique. Ils appartiennent presque tous à la famille des Sciuridés, qui comprend aussi les chiens de prairies et les marmottes, mais quelques écureuils volants font partie de la famille des Anomaluridés.
-                            La queue en panache de l'écureuil et son acharnement à faire des provisions pour l'hiver ont contribué à sa popularité.
-                        </p>
-                    </div>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu__burger.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="shortcut icon" href="images/ecureuil__logo.png">
+    <title>L'écureuil d'Amérique du Nord</title>
+</head>
 
-                    <!-- Bouton menant à l'inscription -->
-                    <div class="bouton__inscription">
-                        <nav>
-                            <a href="#inscription" class="menu__a">S'inscrire</a>
-                        </nav>
-                    </div>
+<body>
+    <!--////////////////////Conteneur Acceuil-->
+    <!-- Conteneur principal pour l'accueil -->
+    <div class="conteneur acceuil">
+        <header class="centre" id="acceuil">
+
+            <!-- Section contenant les textes principaux -->
+            <div class="textes">
+
+                <!-- Groupe du logo et du titre principal -->
+                <div class="titre__principal">
+
+                    <!-- Logo -->
+                    <img class="logo" src="images/ecureuil__logo.png" width="60" height="60" alt="logo">
+
+                    <!-- Titre principal -->
+                    <h1>L'écureuil d'Amérique du Nord</h1>
                 </div>
 
-                <!-- Menu de navigation -->
-                <div class="navigation">
-                    <input type="checkbox" id="chk-burger">
-                    <label for="chk-burger" class="menu__burger">
-                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" alt="bouton__burger__logo" width="32" height="32">
-                    </label>
-                    
-                    <!-- Ensemble des liens de navigation -->
-                    <nav class="liens">
-                        <a href="#acceuil" class="menu__a">Accueil</a>
-                        <a href="#tableau" class="menu__a">Alimentation</a>
-                        <a href="#articles" class="menu__a">Articles</a>
-                        <a href="#galerie" class="menu__a">Galerie</a>
-                        <a href="#video" class="menu__a">Vidéo</a>
-                        <a href="#inscription" class="menu__a">Inscription</a>
-                        <a href="#pied" class="menu__a">Pied de page</a>
+                <!-- Titre secondaire -->
+                <div class="titre__secondaire">
+                    <h2>Le symbole de Montréal</h2>
+                </div>
+
+                <!-- Auteur -->
+                <div class="auteur">
+                    <h2>Auteur: Philippe Fauchon</h2>
+                </div>
+
+                <!-- Icones -->
+                <figure class="icones__haut">
+                    <a href="https://github.com/PhilippeFauchon" target="_blank">
+                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25"
+                            alt="github">
+                    </a>
+
+                    <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25"
+                        alt="facebook">
+                    <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25"
+                        alt="stackoverflow">
+                    <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16"
+                        alt="linkedin">
+                    <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25"
+                        alt="messenger">
+                    <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25"
+                        alt="discord">
+                </figure>
+
+                <!-- Texte descriptif -->
+                <div class="description">
+                    <p>
+                        Le terme écureuil est un nom vernaculaire ambigu qui désigne de nombreuses espèces de rongeurs
+                        grimpeurs de taille moyenne, parfois même « volants ». Leur queue, plus ou moins touffue selon
+                        les espèces, forme un panache ou un plumeau caractéristique. Ils appartiennent presque tous à la
+                        famille des Sciuridés, qui comprend aussi les chiens de prairies et les marmottes, mais quelques
+                        écureuils volants font partie de la famille des Anomaluridés.
+                        La queue en panache de l'écureuil et son acharnement à faire des provisions pour l'hiver ont
+                        contribué à sa popularité.
+                    </p>
+                </div>
+
+                <!-- Bouton menant à l'inscription -->
+                <div class="bouton__inscription">
+                    <nav>
+                        <a href="#inscription" class="menu__a">S'inscrire</a>
                     </nav>
                 </div>
-
-            </header>
-        </div>
-
-        <!--////////////////////Conteneur Tableau-->
-        <!-- Section du tableau d'aliments -->
-        <div class="conteneur tableau">
-            <section class="centre" id="tableau">
-                <h2>Alimentation</h2>
-                
-                <!-- Tableau des aliments -->
-                <table class="tableau">
-
-                    <thead>
-                        <tr>
-                            <th>Aliment</th>
-                            <th>Catégorie</th>
-                            <th>Saison préférée</th>
-                            <th>Notes / Description</th>
-                            <th>Type de collecte</th>
-                            <th>Fréquence de consommation</th>
-                        </tr>
-                    </thead>
-
-                    <!-- Corps du tableau contenant les données -->
-                    <tbody>
-                        <tr>
-                            <!--Noisettes-->
-                            <td>Noisettes</td>
-                            <td>Noix et graines</td>
-                            <td>Automne</td>
-                            <td>Stockées en grandes quantités pour l'hiver.</td>
-                            <td>Stockage</td>
-                            <td>Très fréquente</td>
-                        </tr>
-
-                        <tr>
-                            <!--Glands-->
-                            <td>Glands</td>
-                            <td>Noix et graines</td>
-                            <td>Automne</td>
-                            <td>Très énergétiques, base alimentaire.</td>
-                            <td>Stockage</td>
-                            <td>Fréquente</td>
-                        </tr>
-
-                        <tr>
-                            <!--Baies-->
-                            <td>Baies (mûres, framboises)</td>
-                            <td>Fruits</td>
-                            <td>Été</td>
-                            <td>Source de sucre, mangées fraîches.</td>
-                            <td>Cueillette immédiate</td>
-                            <td>Occasionnelle</td>
-                        </tr>
-
-                        <tr>
-                            <!--Champignons-->
-                            <td>Champignons</td>
-                            <td>Fongiques</td>
-                            <td>Été–Automne</td>
-                            <td>Parfois séchés sur les branches.</td>
-                            <td>Séchage / Stockage</td>
-                            <td>Occasionnelle</td>
-                        </tr>
-
-                        <tr>
-                            <!--Bourgeons-->
-                            <td>Bourgeons d'arbres</td>
-                            <td>Végétaux</td>
-                            <td>Printemps</td>
-                            <td>Nourriture de début de saison.</td>
-                            <td>Cueillette immédiate</td>
-                            <td>Occasionnelle</td>
-                        </tr>
-
-                        <tr>
-                            <!--Graines de tournesol-->
-                            <td>Graines de tournesol</td>
-                            <td>Graines</td>
-                            <td>Automne</td>
-                            <td>Très riches en énergie, souvent trouvées près des jardins.</td>
-                            <td>Cueillette</td>
-                            <td>Fréquente</td>
-                        </tr>
-
-                        <tr>
-                            <!--Mais-->
-                            <td>Épis de maïs</td>
-                            <td>Végétaux / Graines</td>
-                            <td>Fin été – Automne</td>
-                            <td>Mangés en partie ou transportés.</td>
-                            <td>Cueillette</td>
-                            <td>Occasionnelle</td>
-                        </tr>
-
-                        <tr>
-                            <!--Pignons-->
-                            <td>Pignons (graines de conifères)</td>
-                            <td>Graines</td>
-                            <td>Automne</td>
-                            <td>Très nutritifs, difficiles à extraire.</td>
-                            <td>Cueillette</td>
-                            <td>Fréquente</td>
-                        </tr>
-
-                        <tr>
-                            <!--Pommes-->
-                            <td>Pommes sauvages</td>
-                            <td>Fruits</td>
-                            <td>Automne</td>
-                            <td>Consommées directement ou partiellement.</td>
-                            <td>Cueillette</td>
-                            <td>Occasionnelle</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </section>
-        </div>
-
-        <!--////////////////////Conteneur Articles-->
-        <!-- Conteneur de la section articles -->
-        <div class="conteneur articles">
-            <section class="centre" id="articles">
-                <h2>Articles</h2>
-                    
-                <article class="article">
-                    <div class="article__div">
-                        <h3 class="article__h3">Taille et poid de l'écureuil</h3>
-                        <p  class="article__p">Adulte, l'écureuil mesure entre 20 et 28 cm sans la queue, qui mesure elle aussi une vingtaine de centimètres. Son poids varie généralement entre 250 et 340 grammes.</p>
-                        <p class="article__p">L'écureuil, principalement l'écureuil roux européen, est un petit mammifère vif pesant généralement entre 200 et 500 grammes.</p>
-                        <p class="article__p">Son poids fluctue avec les saisons et son alimentation variée, et il est connu pour ses réserves hivernales qui symbolisent l'épargne, tout en faisant face à des menaces comme l'écureuil gris, un compétiteur invasif.</p>
-                        <p class="article__p">La queue touffue emblématique de l'écureuil ne lui sert pas seulement de balancier pour l'agilité : elle agit aussi comme une couverture thermique pendant les mois froids de l'hiver.</p>
-                    </div>
-                        <figure class="article__figure">
-                            <img class="article__img" src="images/article-1.webp" alt="article-1">
-                            <figcaption class="article__figacption">Gros écureuil</figcaption>
-                        </figure>
-                </article>
-                
-                <article class="article">
-                    <div class="article__div">
-                        <h3 class="article__h3">Activité de l'écureuil</h3>
-                        <p  class="article__p">L'écureuil est actif le jour (diurne) et ne connaît pas l'hibernation. Il est souvent visible en hiver une fois que les feuilles sont tombées.</p>
-                        <p class="article__p">Bien qu'ils ne fassent pas une véritable hibernation, les écureuils réduisent considérablement leur activité lors des jours les plus froids de l'hiver, sortant de leurs nids douillets uniquement pour déterrer leurs réserves de nourriture enfouies.</p>
-                    </div>
-                        <figure class="article__figure">
-                            <img class="article__img" src="images/article-2.jpg" alt="article-2">
-                            <figcaption class="article__figacption">Petit écureuil</figcaption>
-                        </figure>
-                </article>
-                
-                <article class="article">
-                    <div class="article__div">
-                        <h3 class="article__h3">L'écureuil et les noix</h3>
-                        <p  class="article__p">En cachant et en oubliant des noix et graines, l'écureuil contribue à la dispersion des arbres et favorise le reboisement.</p>
-                        <p class="article__p">Les écureuils ont une mémoire spatiale remarquable qui leur permet de se souvenir de l'emplacement de centaines, voire de milliers, de noix qu'ils ont enterrées individuellement à l'automne.</p>
-                        <p class="article__p">Grâce à leurs mâchoires puissantes et à leurs incisives qui poussent continuellement, les écureuils peuvent facilement ouvrir les coquilles dures des noix comme les noisettes et les glands.</p>
-                        <p class="article__p">En enfouissant des noix et en oubliant certaines de leurs caches, les écureuils jouent un rôle écologique crucial en participant involontairement à la dispersion des graines et au reboisement des forêts.</p>
-                    </div>
-                        <figure class="article__figure">
-                            <img class="article__img" src="images/article-3.webp" alt="article-3">
-                            <figcaption class="article__figacption">Écureuil gourmand</figcaption>
-                        </figure>
-                </article>
-                
-                <article class="article">
-                    <div class="article__div">
-                        <h3 class="article__h3">L'écureuil et les arbres</h3>
-                        <p  class="article__p">L'écureuil peut parfois s'attaquer à l'écorce, mais son impact global est généralement considéré comme positif pour l'écosystème.</p>
-                        <p class="article__p">Les écureuils sont des athlètes aériens, capables de grimper et de sauter d'arbre en arbre avec une agilité incroyable, utilisant leurs longues queues touffues comme balanciers pour maintenir leur équilibre.</p>
-                        <p class="article__p">Ils construisent souvent leurs nids, appelés « drus », haut dans la fourche des arbres à l'aide de brindilles, de feuilles et de mousse, s'y réfugiant pour dormir et élever leurs jeunes à l'abri des prédateurs terrestres.</p>
-                    </div>
-                        <figure class="article__figure">
-                            <img class="article__img" src="images/article-4.webp" alt="article-4">
-                            <figcaption class="article__figacption">Écureuil grimpeur</figcaption>
-                        </figure>
-                </article>
-        </section>
-        </div>  
-
-        <!--////////////////////Conteneur Galerie-->
-        <!-- Conteneur galerie -->
-        <div class="conteneur galerie">
-            <section class="centre" id="galerie">
-                <h2>Galerie</h2>
-            </section>
-        </div> 
-
-        <!--////////////////////Conteneur Video-->
-        <!-- Conteneur vidéo -->
-        <div class="conteneur video">
-            <section class="centre" id="video">
-                <h2>Vidéo</h2>
-            </section>
-        </div>
-
-        <!--////////////////////Conteneur Inscription-->
-        <!-- Conteneur du formulaire d'inscription -->
-        <div class="conteneur inscription">
-            <div class="centre" id="inscription">
-                <!-- Formulaire principal -->
-                <form class="formulaire">
-
-                    <!-- Champ du nom -->
-                    <div class="form__nom">
-                        <label class="formulaire__label" for="nom">Nom:</label>
-                        <input class="formulaire__input" id="nom" type="text" placeholder="Entrez votre nom ici">
-                    </div>
-
-                    <!-- Champ du prénom -->
-                    <div class="form__prenom">
-                        <label class="formulaire__label" for="prenom">Prénom:</label>
-                        <input class="formulaire__input" id="prenom" type="text" placeholder="Entrez votre prénom ici">
-                    </div>
-
-                    <!-- Champ du courriel -->
-                    <div class="form__courriel">
-                        <label class="formulaire__label" for="courriel">Courriel:</label>
-                        <input class="formulaire__input" id="courriel" type="email" placeholder="Entrez votre courriel ici">
-                    </div>
-
-                    <!-- Groupe de boutons radio -->
-                    <fieldset class="formulaire__rad">
-                        <legend>Aimez-vous les écureuils?</legend>
-                        <input type="radio" name="rad-abonnement" id="rad-1">
-                        <label for="rad-1">Oui</label>
-
-                        <input type="radio" name="rad-abonnement" id="rad-2">
-                        <label for="rad-2">Non</label>
-
-                        <input type="radio" name="rad-abonnement" id="rad-3">
-                        <label for="rad-3">Je ne sais pas</label>
-                    </fieldset>
-
-                    <!-- Bouton de validation -->
-                    <input class="formulaire__submit" type="submit" value="Valider l'inscription">
-                </form>
             </div>
-        </div>
 
-        <!--////////////////////Conteneur Pied-->
-        <!-- Conteneur du pied de page -->
-        <div class="conteneur pied">
-            <!-- Pied de page -->
-            <footer class="pied centre" id="pied">
-                <h2>Pied de page</h2>
+            <!-- Menu de navigation -->
+            <div class="navigation">
+                <input type="checkbox" id="chk-burger">
+                <label for="chk-burger" class="menu__burger">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" alt="bouton__burger__logo"
+                        width="32" height="32">
+                </label>
 
-                <!-- Contenu du pied de page -->
-                <div class="contenu__pied">
-                    <!-- Informations personnelles -->
-                    <div class="informations">
-                        <h2>Informations</h2>
-                        <ul>
-                            <li>Auteur: Philippe Fauchon</li>
-                            <li>Courriel: e2542354@cmaisonneuve.qc.ca</li>
-                            <li>Session: Automne 2025</li>
-                            <li>Programme: Techniques d'intégration multimédias</li>
-                        </ul>
-                    </div>
+                <!-- Ensemble des liens de navigation -->
+                <nav class="liens">
+                    <a href="#acceuil" class="menu__a">Accueil</a>
+                    <a href="#inscription" class="menu__a">Inscription</a>
+                    <a href="#tableau" class="menu__a">Alimentation</a>
+                    <a href="#video" class="menu__a">Vidéos</a>
+                    <a href="#articles" class="menu__a">Articles</a>
+                    <a href="#galerie" class="menu__a">Galerie</a>
+                    <a href="#pied" class="menu__a">Pied de page</a>
+                </nav>
+            </div>
 
-                    <!-- Informations scolaires -->
-                    <div class="scolaire">
-                        <h2>Scolaire</h2>
-                        <ul>
-                            <li>Cours: Mise en page Web</li>
-                            <li>Professeur: Eddy Martin</li>
-                            <li>Travail: TP2</li>
-                            <li>Collège de Maisonneuve: 3800 rue Sherbrooke Est Montréal</li>
-                        </ul>
-                    </div>
+        </header>
+    </div>
 
-                    <!-- Liens externes -->
-                    <div class="liens__externes">
-                        <h2>Liens</h2>
-                        <a href="https://github.com/PhilippeFauchon" target="_blank">GitHub Page</a>
-                        <a href="https://www.cmaisonneuve.qc.ca" target="_blank">Collège de Maisonneuve</a>
-                        <a href="https://fr.wikipedia.org/wiki/%C3%89cureuil" target="_blank">Wikipedia</a>
-                        <a href="https://mffp.gouv.qc.ca/jeunesse/ecureuils-hiver/" target="_blank">Gouvernement du Québec</a>
-                        <a href="https://parcs.canada.ca/pn-np/nb/fundy/nature/faune-animals/mammiferes-mammals/ecureuils-squirrels" target="_blank">Gouvernement du Canada</a>
-                    </div>
+    <!--////////////////////Conteneur Inscription-->
+    <!-- Conteneur du formulaire d'inscription -->
+    <div class="conteneur inscription">
+        <div class="centre" id="inscription">
+            <h1>Inscription</h1>
+            <!-- Formulaire principal -->
+            <form class="formulaire">
+
+                <!-- Champ du nom -->
+                <div class="form__nom">
+                    <label class="formulaire__label" for="nom">Nom:</label>
+                    <input class="formulaire__input" id="nom" type="text" placeholder="Entrez votre nom ici">
                 </div>
 
-                <!-- Bas du pied de page -->
-                <div class="bas">
-                    <div class="avis">
-                        <h3>Avis de confidentialité | Privacy Notice</h3>
-                    </div>
-
-                    <!-- Icônes de réseaux sociaux -->
-                    <figure class="icones__bas">
-                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25" alt="github">
-                        <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25" alt="facebook">
-                        <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25" alt="stackoverflow">
-                        <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16" alt="linkedin">
-                        <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25" alt="messenger">
-                        <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25" alt="discord">
-                    </figure>
+                <!-- Champ du prénom -->
+                <div class="form__prenom">
+                    <label class="formulaire__label" for="prenom">Prénom:</label>
+                    <input class="formulaire__input" id="prenom" type="text" placeholder="Entrez votre prénom ici">
                 </div>
 
-            </footer>
-        </div>
+                <!-- Champ du courriel -->
+                <div class="form__courriel">
+                    <label class="formulaire__label" for="courriel">Courriel:</label>
+                    <input class="formulaire__input" id="courriel" type="email" placeholder="Entrez votre courriel ici">
+                </div>
 
-    </body>
+                <!-- Groupe de boutons radio -->
+                <fieldset class="formulaire__rad">
+                    <legend>Aimez-vous les écureuils?</legend>
+                    <input type="radio" name="rad-abonnement" id="rad-1">
+                    <label for="rad-1">Oui</label>
+
+                    <input type="radio" name="rad-abonnement" id="rad-2">
+                    <label for="rad-2">Non</label>
+
+                    <input type="radio" name="rad-abonnement" id="rad-3">
+                    <label for="rad-3">Je ne sais pas</label>
+                </fieldset>
+
+                <!-- Bouton de validation -->
+                <input class="formulaire__submit" type="submit" value="Valider l'inscription">
+            </form>
+        </div>
+    </div>
+
+    <!--////////////////////Conteneur Tableau-->
+    <!-- Section du tableau d'aliments -->
+    <div class="conteneur tableau">
+        <section class="centre" id="tableau">
+            <h2 class="alimentation__h2">Alimentation</h2>
+
+            <!-- Tableau des aliments -->
+            <table class="tableau">
+
+                <thead>
+                    <tr>
+                        <!--Catégories-->
+                        <th>Aliment</th>
+                        <th>Catégorie</th>
+                        <th>Saison préférée</th>
+                        <th>Notes / Description</th>
+                        <th>Type de collecte</th>
+                        <th>Fréquence de consommation</th>
+                    </tr>
+                </thead>
+
+                <!-- Corps du tableau contenant les données -->
+                <tbody>
+                    <tr>
+                        <!--Noisettes-->
+                        <td>Noisettes</td>
+                        <td>Noix et graines</td>
+                        <td>Automne</td>
+                        <td>Stockées en grandes quantités pour l'hiver.</td>
+                        <td>Stockage</td>
+                        <td>Très fréquente</td>
+                    </tr>
+
+                    <tr>
+                        <!--Glands-->
+                        <td>Glands</td>
+                        <td>Noix et graines</td>
+                        <td>Automne</td>
+                        <td>Très énergétiques, base alimentaire.</td>
+                        <td>Stockage</td>
+                        <td>Fréquente</td>
+                    </tr>
+
+                    <tr>
+                        <!--Baies-->
+                        <td>Baies (mûres, framboises)</td>
+                        <td>Fruits</td>
+                        <td>Été</td>
+                        <td>Source de sucre, mangées fraîches.</td>
+                        <td>Cueillette immédiate</td>
+                        <td>Occasionnelle</td>
+                    </tr>
+
+                    <tr>
+                        <!--Champignons-->
+                        <td>Champignons</td>
+                        <td>Fongiques</td>
+                        <td>Été–Automne</td>
+                        <td>Parfois séchés sur les branches.</td>
+                        <td>Séchage / Stockage</td>
+                        <td>Occasionnelle</td>
+                    </tr>
+
+                    <tr>
+                        <!--Bourgeons-->
+                        <td>Bourgeons d'arbres</td>
+                        <td>Végétaux</td>
+                        <td>Printemps</td>
+                        <td>Nourriture de début de saison.</td>
+                        <td>Cueillette immédiate</td>
+                        <td>Occasionnelle</td>
+                    </tr>
+
+                    <tr>
+                        <!--Graines de tournesol-->
+                        <td>Graines de tournesol</td>
+                        <td>Graines</td>
+                        <td>Automne</td>
+                        <td>Très riches en énergie, souvent trouvées près des jardins.</td>
+                        <td>Cueillette</td>
+                        <td>Fréquente</td>
+                    </tr>
+
+                    <tr>
+                        <!--Mais-->
+                        <td>Épis de maïs</td>
+                        <td>Végétaux / Graines</td>
+                        <td>Fin été – Automne</td>
+                        <td>Mangés en partie ou transportés.</td>
+                        <td>Cueillette</td>
+                        <td>Occasionnelle</td>
+                    </tr>
+
+                    <tr>
+                        <!--Pignons-->
+                        <td>Pignons (graines de conifères)</td>
+                        <td>Graines</td>
+                        <td>Automne</td>
+                        <td>Très nutritifs, difficiles à extraire.</td>
+                        <td>Cueillette</td>
+                        <td>Fréquente</td>
+                    </tr>
+
+                    <tr>
+                        <!--Pommes-->
+                        <td>Pommes sauvages</td>
+                        <td>Fruits</td>
+                        <td>Automne</td>
+                        <td>Consommées directement ou partiellement.</td>
+                        <td>Cueillette</td>
+                        <td>Occasionnelle</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+
+    <!--////////////////////Conteneur Video-->
+    <!-- Conteneur vidéo -->
+    <div class="conteneur video">
+        <section class="centre" id="video">
+            <h2>Vidéos</h2>
+            <figure class="video">
+
+                <!--Première vidéo-->
+                <figure class="video__figure">
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/b76IWrKR5ng?si=qyc8gGj5WMtlDVP1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <!--Deuxième vidéo-->
+                <figure class="video__figure">
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/GluzAfBLBPQ?si=DYY0d4UZiuYwoitk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+                <!--Troisième vidéo-->
+                <figure class="video__figure">
+                    <iframe width="350" height="250" src="https://www.youtube.com/embed/y8rDg7eX33w?si=ZZ_DxtzqpHklKvNy"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+
+            </figure>
+        </section>
+    </div>
+
+    <!--////////////////////Conteneur Articles-->
+    <!-- Conteneur de la section articles -->
+    <div class="conteneur articles">
+        <section class="centre" id="articles">
+            <h2>Articles</h2>
+
+            <!--Premier article-->
+            <article class="article">
+                <div class="article__div">
+                    <h3 class="article__h3">Taille et poid de l'écureuil</h3>
+                    <p class="article__p">Adulte, l'écureuil mesure entre 20 et 28 cm sans la queue, qui mesure elle
+                        aussi une vingtaine de centimètres. Son poids varie généralement entre 250 et 340 grammes.</p>
+                    <p class="article__p">L'écureuil, principalement l'écureuil roux européen, est un petit mammifère
+                        vif pesant généralement entre 200 et 500 grammes.</p>
+                    <p class="article__p">Son poids fluctue avec les saisons et son alimentation variée, et il est connu
+                        pour ses réserves hivernales qui symbolisent l'épargne, tout en faisant face à des menaces comme
+                        l'écureuil gris, un compétiteur invasif.</p>
+                    <p class="article__p">La queue touffue emblématique de l'écureuil ne lui sert pas seulement de
+                        balancier pour l'agilité : elle agit aussi comme une couverture thermique pendant les mois
+                        froids de l'hiver.</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/article-1.webp" alt="article-1">
+                    <figcaption class="article__figcaption">Gros écureuil</figcaption>
+                </figure>
+            </article>
+
+            <!--Deuxième article-->
+            <article class="article">
+                <div class="article__div">
+                    <h3 class="article__h3">Activité de l'écureuil</h3>
+                    <p class="article__p">L'écureuil est actif le jour (diurne) et ne connaît pas l'hibernation. Il est
+                        souvent visible en hiver une fois que les feuilles sont tombées.</p>
+                    <p class="article__p">Bien qu'ils ne fassent pas une véritable hibernation, les écureuils réduisent
+                        considérablement leur activité lors des jours les plus froids de l'hiver, sortant de leurs nids
+                        douillets uniquement pour déterrer leurs réserves de nourriture enfouies.</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/article-2.jpg" alt="article-2">
+                    <figcaption class="article__figcaption">Petit écureuil</figcaption>
+                </figure>
+            </article>
+
+            <!--Troisième article-->
+            <article class="article">
+                <div class="article__div">
+                    <h3 class="article__h3">L'écureuil et les noix</h3>
+                    <p class="article__p">En cachant et en oubliant des noix et graines, l'écureuil contribue à la
+                        dispersion des arbres et favorise le reboisement.</p>
+                    <p class="article__p">Les écureuils ont une mémoire spatiale remarquable qui leur permet de se
+                        souvenir de l'emplacement de centaines, voire de milliers, de noix qu'ils ont enterrées
+                        individuellement à l'automne.</p>
+                    <p class="article__p">Grâce à leurs mâchoires puissantes et à leurs incisives qui poussent
+                        continuellement, les écureuils peuvent facilement ouvrir les coquilles dures des noix comme les
+                        noisettes et les glands.</p>
+                    <p class="article__p">En enfouissant des noix et en oubliant certaines de leurs caches, les
+                        écureuils jouent un rôle écologique crucial en participant involontairement à la dispersion des
+                        graines et au reboisement des forêts.</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/article-3.webp" alt="article-3">
+                    <figcaption class="article__figcaption">Écureuil gourmand</figcaption>
+                </figure>
+            </article>
+
+            <!--Quatrième article-->
+            <article class="article">
+                <div class="article__div">
+                    <h3 class="article__h3">L'écureuil et les arbres</h3>
+                    <p class="article__p">L'écureuil peut parfois s'attaquer à l'écorce, mais son impact global est
+                        généralement considéré comme positif pour l'écosystème.</p>
+                    <p class="article__p">Les écureuils sont des athlètes aériens, capables de grimper et de sauter
+                        d'arbre en arbre avec une agilité incroyable, utilisant leurs longues queues touffues comme
+                        balanciers pour maintenir leur équilibre.</p>
+                    <p class="article__p">Ils construisent souvent leurs nids, appelés « drus », haut dans la fourche
+                        des arbres à l'aide de brindilles, de feuilles et de mousse, s'y réfugiant pour dormir et élever
+                        leurs jeunes à l'abri des prédateurs terrestres.</p>
+                </div>
+                <figure class="article__figure">
+                    <img class="article__img" src="images/article-4.webp" alt="article-4">
+                    <figcaption class="article__figcaption">Écureuil grimpeur</figcaption>
+                </figure>
+            </article>
+        </section>
+    </div>
+
+    <!--////////////////////Conteneur Galerie-->
+    <!-- Conteneur galerie -->
+    <div class="conteneur galerie">
+        <section class="centre" id="galerie">
+            <h2 class="galerie__titre">Galerie</h2>
+            <figure class="galerie">
+
+                <!--Première photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-1.jpg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil mignon</figcaption>
+                </figure>
+
+                <!--Deuxième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-2.jpeg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil très mignon</figcaption>
+                </figure>
+
+                <!--Troisième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-3.webp" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil curieux</figcaption>
+                </figure>
+
+                <!--Quatrième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-4.jpeg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil dubitatif</figcaption>
+                </figure>
+
+                <!--Cinquième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-5.webp" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil gourmand</figcaption>
+                </figure>
+
+                <!--Sixième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-6.webp" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil frileux</figcaption>
+                </figure>
+
+                <!--Septième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-7.jpg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil outré</figcaption>
+                </figure>
+
+                <!--Huitième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-8.avif" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil méchant</figcaption>
+                </figure>
+
+                <!--Neuvième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-9.jpg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil caché</figcaption>
+                </figure>
+
+                <!--Dixième photo-->
+                <figure class="galerie__figure">
+                    <img src="images/galerie-10.jpg" class="galerie__img">
+                    <figcaption class="galerie__figcaption">Écureuil héro</figcaption>
+                </figure>
+
+            </figure>
+        </section>
+    </div>
+
+    <!--////////////////////Conteneur Pied-->
+    <!-- Conteneur du pied de page -->
+    <div class="conteneur pied">
+        <!-- Pied de page -->
+        <footer class="pied centre" id="pied">
+            <h2>Pied de page</h2>
+
+            <!-- Contenu du pied de page -->
+            <div class="contenu__pied">
+                <!-- Informations personnelles -->
+                <div class="informations">
+                    <h2>Informations</h2>
+                    <ul>
+                        <li>Auteur: Philippe Fauchon</li>
+                        <li>Courriel: e2542354@cmaisonneuve.qc.ca</li>
+                        <li>Session: Automne 2025</li>
+                        <li>Programme: Techniques d'intégration multimédias</li>
+                    </ul>
+                </div>
+
+                <!-- Informations scolaires -->
+                <div class="scolaire">
+                    <h2>Scolaire</h2>
+                    <ul>
+                        <li>Cours: Mise en page Web</li>
+                        <li>Professeur: Eddy Martin</li>
+                        <li>Travail: TP2</li>
+                        <li>Collège de Maisonneuve: 3800 rue Sherbrooke Est Montréal</li>
+                    </ul>
+                </div>
+
+                <!-- Liens externes -->
+                <div class="liens__externes">
+                    <h2>Liens</h2>
+                    <a href="https://github.com/PhilippeFauchon" target="_blank">GitHub Page</a>
+                    <a href="https://www.cmaisonneuve.qc.ca" target="_blank">Collège de Maisonneuve</a>
+                    <a href="https://fr.wikipedia.org/wiki/%C3%89cureuil" target="_blank">Wikipedia</a>
+                    <a href="https://mffp.gouv.qc.ca/jeunesse/ecureuils-hiver/" target="_blank">Gouvernement du
+                        Québec</a>
+                    <a href="https://parcs.canada.ca/pn-np/nb/fundy/nature/faune-animals/mammiferes-mammals/ecureuils-squirrels"
+                        target="_blank">Gouvernement du Canada</a>
+                </div>
+            </div>
+
+            <!-- Bas du pied de page -->
+            <div class="bas">
+                <div class="avis">
+                    <h3>Avis de confidentialité | Privacy Notice</h3>
+                </div>
+
+                <!-- Icônes de réseaux sociaux -->
+                <figure class="icones__bas">
+                    <a href="https://github.com/PhilippeFauchon" target="_blank">
+                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="25" height="25"
+                            alt="github">
+                    </a>
+                    <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=00f" width="25" height="25"
+                        alt="facebook">
+                    <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=a00" width="25" height="25"
+                        alt="stackoverflow">
+                    <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0960da" width="25" height="16"
+                        alt="linkedin">
+                    <img src="https://s2.svgbox.net/social.svg?ic=messenger&color=00f" width="25" height="25"
+                        alt="messenger">
+                    <img src="https://s2.svgbox.net/social.svg?ic=discord&color=3609da" width="25" height="25"
+                        alt="discord">
+                </figure>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
 </html>

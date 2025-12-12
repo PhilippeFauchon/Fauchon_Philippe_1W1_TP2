@@ -10,6 +10,7 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+    z-index: 2;
 }
 
 /* Conteneur des liens du menu */
@@ -22,6 +23,7 @@
     background-color: rgba(0, 0, 0, 0.300);
     width: 250px;
     border-radius: 8px;
+    z-index: 3;
 
     transform: translateX(110%);
     transition: transform 1s;

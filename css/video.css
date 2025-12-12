@@ -1,0 +1,14 @@
+/* Propriétés du conteneur flex videos*/
+.video__figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+/* hover du conteneur dlex videos*/
+.video__figure:hover{
+    transform: scale(1.2);
+}
