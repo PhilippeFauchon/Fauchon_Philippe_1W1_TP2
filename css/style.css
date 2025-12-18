@@ -191,17 +191,21 @@ section,header{
 }
 
 .conteneur:nth-of-type(4){
-    background-color: green;
+    background-color: rgb(202, 202, 0);
 }
 
 .conteneur:nth-of-type(5){
-    background-color: red;
+    background-color: green;
 }
 
 .conteneur:nth-of-type(6){
-    background-color: deeppink;
+    background-color: red;
 }
 
 .conteneur:nth-of-type(7){
+    background-color: deeppink;
+}
+
+.conteneur:nth-of-type(8){
     background-color: chocolate;
 }
