@@ -1,78 +1,62 @@
 /*global*/
 .global {
-    background-color: #f6e6a8;
-    padding: 4rem 2rem;
+    background-color: #fdd637;
 }
 
+/*Polices DynaPuff*/
 .global h1, .global h2, .global h3 {
-    font-family: "DynaPuff", cursive;
+    font-family: "DynaPuff";
 }
 
 /* Titre principal */
 .global h1 {
     font-size: clamp(0.1rem, 5vw, 3rem);
-    margin-bottom: 4rem;
+    margin-bottom: 30px;
 }
 
-/*Textes*/
+.global h2{
+    margin-top: 20px;
+}
+
+/*Polices montserrat*/
 .global ol, .global li, .global figcaption {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.6;
+    font-family: "Montserrat";
+    margin-left: -10px;
+    margin-bottom: 10px;
 }
 
-/************************* RECETTE ******************/
+/*Recette*/
 .recette {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 3rem;
-    margin-bottom: 6rem;
     align-items: flex-start;
+    border-bottom: 5px dotted #aaa;
 }
 
-/*image*/
-.recette__image {
-    flex: 1 1 100%;
-    max-width: 500px;
-    order: 1;
-    display: flex;
-    justify-content: center;
+.recette__div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-/*ingredients*/
-.recette__ingredients {
-    flex: 1 1 45%;
-    min-width: 320px;
-    order: 2;
-}
-
-.recette__ingredients h2 {
-    margin-bottom: 1rem;
-}
-
-/*preparation*/
-.recette__bas {
-    flex: 1 1 100%;
-    order: 3;
-    border-bottom: 4px dotted #aaa;
-}
-
-.recette__preparation {
-    width: 100%;
-    margin-top: 1.5rem;
-}
-
-.recette__preparation h2 {
-    margin-bottom: 1rem;
+.recette__image{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    min-width: 300px;
 }
 
 /*style de l'image*/
 .recette__figure {
-    background-color: #f6e6a8;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 10px;
     transform: rotate(-5deg);
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
+    transition: transform 1s;
+    border: 2px solid #aaa;
+    margin-top: 50px;
 }
 
 .recette__figure:hover {
@@ -80,23 +64,32 @@
 }
 
 .recette__img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
     display: block;
+    width: 100%;
+    border-radius: 10px;
+    
 }
 
 .recette__figcaption {
+    padding: 5px;
+    border-radius: 10px;
     text-align: center;
-    margin-top: 0.5rem;
-    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.150);
 }
 
 /*alternance droite gauche*/
-.recette:nth-of-type(even) .recette__image {
-    order: 2;
+.recette:nth-last-of-type(odd) .recette__image {
+    order: -1;
 }
 
-.recette:nth-of-type(even) .recette__ingredients {
-    order: 1;
+.recette__image {
+    order: -1;
+}
+
+.recette:nth-last-of-type(odd) .recette__figure {
+    transform: rotate(5deg);
+}
+
+.recette:nth-last-of-type(odd) .recette__figure:hover {
+    transform: rotate(0deg);
 }

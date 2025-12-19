@@ -65,7 +65,12 @@
     background-color: rgba(255, 255, 255, 0.500);
 }
 
+.maison__img{
+    display: block;
+    filter: hue-rotate(100deg) saturate(1.99);
+    transition: filter 1s;
+}
+
 .maison__img:hover{
-    background-color: blueviolet;
-    padding: 5px;
+    filter: none;
 }
