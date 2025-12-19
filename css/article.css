@@ -6,6 +6,7 @@
     padding: 20px 0;
 }
 
+
 /* Element du conteneur flex */
 .article__div{
     flex-grow: 1;
